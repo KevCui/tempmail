@@ -1,15 +1,20 @@
-tempmail-cli
-===========
+# tempmail
 
-A script to use [temp-mail](https://temp-mail.org/) service in terminal.
+> Use [temp-mail](https://temp-mail.org/) disposal email service from your terminal.
 
-### Dependency
+## Table of Contents
+
+- [Dependency](#dependency)
+- [How to use](#how-to-use)
+- [Run tests](#run-tests)
+
+## Dependency
 
 - [cURL](https://curl.haxx.se/download.html)
 - [jq](https://stedolan.github.io/jq/)
 - [faker-cli](https://github.com/lestoni/faker-cli)
 
-### How to use
+## How to use
 
 ```
 Usage:
@@ -40,8 +45,12 @@ Examples:
     ~$ ./tempmail.sh -s
 ```
 
-### Run tests
+## Run tests
 
 ```
 ~$ bats test/tempmail.bats
 ```
+
+---
+
+<a href="https://www.buymeacoffee.com/kevcui" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
