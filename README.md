@@ -7,6 +7,7 @@
 - [Dependency](#dependency)
 - [How to use](#how-to-use)
 - [Run tests](#run-tests)
+- [Similar projects](#similar-projects)
 
 ## Dependency
 
@@ -50,6 +51,21 @@ Examples:
 ```
 $ bats test/tempmail.bats
 ```
+
+## Similar projects
+
+Want more temp mail service? Check out:
+
+- [1secmail](https://github.com/KevCui/1secmail)
+
+- [getnada](https://github.com/KevCui/getnada)
+
+Want to send anonymous emails? Check out:
+
+- [sendmail](https://github.com/KevCui/sendmail)
+
+You may like them!
+
 
 ---
 
