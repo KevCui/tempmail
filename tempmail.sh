@@ -3,31 +3,31 @@
 # A script to use temp-mail service in terminal
 #
 #/ Usage:
-#/   ./tempmail.sh [-i <inbox>|-c <inbox>|-d <uid>|-s]
+#/   ./tempmail.sh [-u <inbox>|-c <inbox>|-d <uid>|-s]
 #/
 #/ Options:
-#/   no option        Optional, randamly get an inbox
-#/   -i <inbox>       Optional, get an inbox by its mail address
-#/   -c <inbox>       Optional, delete inbox
-#/   -d <uid>         Optional, delete mail by its uid
-#/   -s               Optional, show available domains
-#/   -h | --help      Display this help message
+#/   no option        optional, randamly get an inbox
+#/   -u <inbox>       optional, get an inbox by its mail address
+#/   -c <inbox>       optional, delete inbox
+#/   -d <uid>         optional, delete mail by its uid
+#/   -s               optional, show available domains
+#/   -h | --help      display this help message
 #/
 #/ Examples:
 #/   \e[32m- Generate a random inbox:\e[0m
-#/     ~$ ./tempmail.sh
+#/     $ ./tempmail.sh
 #/
 #/   \e[32m- Get mails in test@temp-link.net:\e[0m
-#/     ~$ ./tempmail.sh \e[33m-i test@temp-link.net\e[0m
+#/     $ ./tempmail.sh \e[33m-u test@temp-link.net\e[0m
 #/
 #/   \e[32m- Delete inbox test@temp-link.net: \e[0m
-#/     ~$ ./tempmail.sh \e[33m-c test@temp-link.net\e[0m
+#/     $ ./tempmail.sh \e[33m-c test@temp-link.net\e[0m
 #/
 #/   \e[32m- Delete mail uUa4V5Hjmkqf9O: \e[0m
-#/     ~$ ./tempmail.sh \e[33m-d uUa4V5Hjmkqf9O\e[0m
+#/     $ ./tempmail.sh \e[33m-d uUa4V5Hjmkqf9O\e[0m
 #/
 #/   \e[32m- Show all available domains: \e[0m
-#/     ~$ ./tempmail.sh \e[33m-s\e[0m
+#/     $ ./tempmail.sh \e[33m-s\e[0m
 
 set -e
 set -u
@@ -56,9 +56,9 @@ set_command() {
 set_args() {
     # Declare arguments
     expr "$*" : ".*--help" > /dev/null && usage
-    while getopts ":hsi:c:d:" opt; do
+    while getopts ":hsu:c:d:" opt; do
         case $opt in
-            i)
+            u)
                 _INBOX="$OPTARG"
                 ;;
             c)

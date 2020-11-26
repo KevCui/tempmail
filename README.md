@@ -18,37 +18,37 @@
 
 ```
 Usage:
-  ./tempmail.sh [-i <inbox>|-c <inbox>|-d <uid>|-s]
+  ./tempmail.sh [-u <inbox>|-c <inbox>|-d <uid>|-s]
 
 Options:
-  no option        Optional, randamly get an inbox
-  -i <inbox>       Optional, get an inbox by its mail address
-  -c <inbox>       Optional, delete inbox
-  -d <uid>         Optional, delete mail by its uid
-  -s               Optional, show available domains
-  -h | --help      Display this help message
+  no option        optional, randamly get an inbox
+  -u <inbox>       optional, get an inbox by its mail address
+  -c <inbox>       optional, delete inbox
+  -d <uid>         optional, delete mail by its uid
+  -s               optional, show available domains
+  -h | --help      display this help message
 
 Examples:
   - Generate a random inbox:
-    ~$ ./tempmail.sh
+    $ ./tempmail.sh
 
   - Get mails in test@temp-link.net:
-    ~$ ./tempmail.sh -i test@temp-link.net
+    $ ./tempmail.sh -u test@temp-link.net
 
   - Delete inbox test@temp-link.net:
-    ~$ ./tempmail.sh -c test@temp-link.net
+    $ ./tempmail.sh -c test@temp-link.net
 
   - Delete mail uUa4V5Hjmkqf9O:
-    ~$ ./tempmail.sh -d uUa4V5Hjmkqf9O
+    $ ./tempmail.sh -d uUa4V5Hjmkqf9O
 
   - Show all available domains:
-    ~$ ./tempmail.sh -s
+    $ ./tempmail.sh -s
 ```
 
 ## Run tests
 
 ```
-~$ bats test/tempmail.bats
+$ bats test/tempmail.bats
 ```
 
 ---
