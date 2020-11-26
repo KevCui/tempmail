@@ -1,6 +1,6 @@
 # tempmail
 
-> Use [temp-mail](https://temp-mail.org/) disposal email service from your terminal.
+> Use [temp-mail](https://temp-mail.org/) disposable email service from your terminal.
 
 ## Table of Contents
 
