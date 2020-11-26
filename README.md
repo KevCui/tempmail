@@ -1,4 +1,4 @@
-# tempmail
+# tempmail ![CI](https://github.com/KevCui/tempmail/workflows/CI/badge.svg)
 
 > Use [temp-mail](https://temp-mail.org/) disposable email service from your terminal.
 
