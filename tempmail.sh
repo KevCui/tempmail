@@ -3,7 +3,7 @@
 # A script to use temp-mail service in terminal
 #
 #/ Usage:
-#/   ./gettempmail.sh [-i <inbox>|-c <inbox>|-d <uid>|-s]
+#/   ./tempmail.sh [-i <inbox>|-c <inbox>|-d <uid>|-s]
 #/
 #/ Options:
 #/   no option        Optional, randamly get an inbox
@@ -15,19 +15,19 @@
 #/
 #/ Examples:
 #/   \e[32m- Generate a random inbox:\e[0m
-#/     ~$ ./gettempmail.sh
+#/     ~$ ./tempmail.sh
 #/
 #/   \e[32m- Get mails in test@temp-link.net:\e[0m
-#/     ~$ ./gettempmail.sh \e[33m-i test@temp-link.net\e[0m
+#/     ~$ ./tempmail.sh \e[33m-i test@temp-link.net\e[0m
 #/
 #/   \e[32m- Delete inbox test@temp-link.net: \e[0m
-#/     ~$ ./gettempmail.sh \e[33m-c test@temp-link.net\e[0m
+#/     ~$ ./tempmail.sh \e[33m-c test@temp-link.net\e[0m
 #/
 #/   \e[32m- Delete mail uUa4V5Hjmkqf9O: \e[0m
-#/     ~$ ./gettempmail.sh \e[33m-d uUa4V5Hjmkqf9O\e[0m
+#/     ~$ ./tempmail.sh \e[33m-d uUa4V5Hjmkqf9O\e[0m
 #/
 #/   \e[32m- Show all available domains: \e[0m
-#/     ~$ ./gettempmail.sh \e[33m-s\e[0m
+#/     ~$ ./tempmail.sh \e[33m-s\e[0m
 
 set -e
 set -u

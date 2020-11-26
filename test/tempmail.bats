@@ -1,12 +1,12 @@
 #!/usr/bin/env bats
 #
 # How to run:
-#   ~$ bats test/gettempmail.bats
+#   ~$ bats test/tempmail.bats
 
 BATS_TEST_SKIPPED=
 
 setup() {
-    _SCRIPT="./gettempmail.sh"
+    _SCRIPT="./tempmail.sh"
     _JQ="$(command -v jq)"
     _FAKER="$(command -v faker-cli)"
 

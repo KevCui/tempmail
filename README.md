@@ -1,4 +1,4 @@
-gettempmail-cli
+tempmail-cli
 ===========
 
 A script to use [temp-mail](https://temp-mail.org/) service in terminal.
@@ -13,7 +13,7 @@ A script to use [temp-mail](https://temp-mail.org/) service in terminal.
 
 ```
 Usage:
-  ./gettempmail.sh [-i <inbox>|-c <inbox>|-d <uid>|-s]
+  ./tempmail.sh [-i <inbox>|-c <inbox>|-d <uid>|-s]
 
 Options:
   no option        Optional, randamly get an inbox
@@ -25,23 +25,23 @@ Options:
 
 Examples:
   - Generate a random inbox:
-    ~$ ./gettempmail.sh
+    ~$ ./tempmail.sh
 
   - Get mails in test@temp-link.net:
-    ~$ ./gettempmail.sh -i test@temp-link.net
+    ~$ ./tempmail.sh -i test@temp-link.net
 
   - Delete inbox test@temp-link.net:
-    ~$ ./gettempmail.sh -c test@temp-link.net
+    ~$ ./tempmail.sh -c test@temp-link.net
 
   - Delete mail uUa4V5Hjmkqf9O:
-    ~$ ./gettempmail.sh -d uUa4V5Hjmkqf9O
+    ~$ ./tempmail.sh -d uUa4V5Hjmkqf9O
 
   - Show all available domains:
-    ~$ ./gettempmail.sh -s
+    ~$ ./tempmail.sh -s
 ```
 
 ### Run tests
 
 ```
-~$ bats test/gettempmail.bats
+~$ bats test/tempmail.bats
 ```
