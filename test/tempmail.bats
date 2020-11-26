@@ -28,7 +28,7 @@ setup() {
 
 @test "CHECK: jq_format(): correct format" {
     json='{"left":"right"}'
-    result="$(echo "$json" | $_JQ)"
+    result="$(echo "$json" | $_JQ .)"
     run jq_format "$json"
     [ "$status" -eq 0 ]
     [ "$output" = "$result" ]
