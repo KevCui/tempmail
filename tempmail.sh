@@ -96,7 +96,7 @@ jq_format() {
     # Show result formated by jq
     # $1: response
     if $_JQ -e . >/dev/null 2>&1 <<<"$1"; then
-        echo "$1" | $_JQ
+        echo "$1" | $_JQ .
     else
         echo "$1"
     fi
